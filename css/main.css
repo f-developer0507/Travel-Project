@@ -150,7 +150,7 @@ body {
 }
 
 .loader-hideen {
-	display: none !important;
+  display: none !important;
 }
 /* loader */
 
@@ -538,12 +538,16 @@ body {
 }
 
 .cta__title {
+  position: relative;
+  z-index: 1;
   font-size: 45px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 .cta__text {
+  position: relative;
+  z-index: 1;
   margin-bottom: 60px;
   font-size: 30px;
   color: var(--secondary);
@@ -552,6 +556,8 @@ body {
 /* Subscribe */
 
 .subscribe {
+  z-index: 1;
+  position: relative;
   padding: 35px 0 50px;
 }
 
@@ -603,6 +609,8 @@ body {
 /* Buttons */
 
 .btn {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   padding: 25px 45px;
   color: #fff !important;
@@ -1039,6 +1047,9 @@ body {
 }
 
 @media (max-width: 460px) {
+  .header::after {
+    display: none;
+  }
   .customers__img img {
     max-width: 100%;
   }
@@ -1047,6 +1058,7 @@ body {
     padding: 10px;
     flex-direction: column;
     row-gap: 10px;
+    width: 100%;
   }
 
   .subscribe-form__input {
